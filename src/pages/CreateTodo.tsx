@@ -15,7 +15,7 @@ export default function CreateTodo(props: Props) {
     e.preventDefault();
     const object = {
       ...value,
-      createdAt: new Date().toJSON()
+      createdAt: new Date().toJSON(),
       id: Math.random()
     };
     props.onSubmit(object);
